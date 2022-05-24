@@ -5,9 +5,10 @@
   "scripts": {
     "ng": "ng",
     "prebuild": "del-cli --force ./dist",
-    "build": "ng build --prod --output-hashing none",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider; ng build --prod --output-hashing none",
     "format": "prettier --write '**/*.{js,json,md,ts,tsx,yml}'",
-    "start": "webpack-dev-server --open",
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider; webpack-dev-server --open",
+    "buildProd": "export NODE_OPTIONS=--openssl-legacy-provider; webpack --config webpackProd.config.js",
     "serveAngular": "ng serve"
   },
   "dependencies": {
