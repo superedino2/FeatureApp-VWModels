@@ -3,9 +3,10 @@ require('../dist/polyfills.js');
 require('../dist/runtime.js');
 
 const featureAppDefinition = {
-  id: 'feature-app',
+  id: 'vfs-test_featureappsection',
 
   create(env) {
+    console.log('superedino');
     return {
       attachTo(containerDiv) {
         containerDiv.innerHTML =

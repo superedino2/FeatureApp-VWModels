@@ -9,8 +9,5 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
 export class AppComponent {
   @Input() title = 'Superedinos World';
 
-  constructor() {
-    console.log('SUPEREDINO');
-
-  }
+  constructor() {}
 }
