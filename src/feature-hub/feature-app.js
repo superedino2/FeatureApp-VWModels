@@ -1,6 +1,9 @@
-require('../dist/main-es5.js');
-require('../dist/polyfills-es5.js');
-require('../dist/runtime-es5.js');
+// require('../dist/main-es5.js');
+// require('../dist/polyfills-es5.js');
+// require('../dist/runtime-es5.js');
+require('../dist/main.js');
+require('../dist/polyfills.js');
+require('../dist/runtime.js'); 
 
 const featureAppDefinition = {
   id: 'feature-app',
