@@ -1,16 +1,20 @@
-require('../dist/main.js');
-require('../dist/polyfills.js');
-require('../dist/runtime.js');
+require('../dist/main-es5.js');
+require('../dist/polyfills-es5.js');
+require('../dist/runtime-es5.js');
 
 const featureAppDefinition = {
-  id: 'vfs-test_featureappsection',
+  id: 'feature-app',
 
   create(env) {
-    console.log('superedino');
+    const selectedModel = 'ID.3';
+    const headerText = 'From CMS';
+    const modelCopy = 'Also from CMS';
+
     return {
       attachTo(containerDiv) {
+        console.log('test');
         containerDiv.innerHTML =
-          '<vw-models title="VW Models"></vw-models>';
+          '<vw-models selectedModel="${selectedModel}"></vw-models>';
       }
     };
   }
