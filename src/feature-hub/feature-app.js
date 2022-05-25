@@ -7,10 +7,15 @@ const featureAppDefinition = {
 
   create(env) {
     return {
+      
+      const selectedModel = 'ID.3';
+      const headerText = 'From CMS';
+      const modelCopy = 'Also from CMS';
+      
       attachTo(containerDiv) {
         console.log('test');
         containerDiv.innerHTML =
-          '<vw-models title="VW Models"></vw-models>';
+          '<vw-models selectedModel="${selectedModel}"></vw-models>';
       }
     };
   }
